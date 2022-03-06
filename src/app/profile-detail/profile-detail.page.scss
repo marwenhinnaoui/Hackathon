@@ -1,0 +1,34 @@
+
+.Content{
+  padding: 15px;
+  .Image{
+    border-radius: 50%;
+    overflow: hidden;
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    top: -80px;
+  }
+  .UserDetails{
+    background: #fff;
+    border-radius: 20px;
+    position: relative;
+    top: 100px;
+    padding: 70px 15px 30px 15px;
+  }
+  .btn{
+    border: 1px solid #546A7B;
+    background: none !important;
+    color: #546A7B;
+  }
+  p.Joined{
+    color: #616161;
+  }
+}
+
+.Image{
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+  overflow: hidden;
+}

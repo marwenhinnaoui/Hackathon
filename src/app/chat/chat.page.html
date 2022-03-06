@@ -1,0 +1,26 @@
+<div class="Header d-flex justify-content-center align-items-center">
+  <input class="form-control" type="text" placeholder="Search" aria-label="default input example">
+  <fa-icon class="text-light ms-3" [icon]="faSearch"></fa-icon>
+</div>
+<ion-content >
+<div class="Content">
+  <div class="mb-5 mt-4">
+    <h1 class="fw-bold ">Messages</h1>
+    <p >You have {{messagesCounters}} messages</p>
+  </div>
+  <div *ngFor="let message of messages" class="Messages ">
+    <div (click)="details(message.id)" class="p-3 d-flex mt-3 align-items-center mb-4 Custom_card">
+    <div class="MessageImage ">
+      <img class="Image" [src]="message.img" alt="">
+    </div>
+    <div class="ms-3 d-flex flex-row align-items-center justify-content-between" style="width: 76%;">
+      <div class=" ">
+        <h4 class="fw-bold">{{message.name}}</h4>
+        <p>{{subMessage(message.messageDetail)}}</p>
+      </div>
+      <p>{{message.date}}</p>
+    </div>
+  </div>
+</div>
+</div>
+</ion-content>

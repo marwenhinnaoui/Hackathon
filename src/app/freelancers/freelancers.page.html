@@ -1,0 +1,36 @@
+<div class="Header d-flex justify-content-center align-items-center">
+  <input class="form-control" type="text" placeholder="Search" aria-label="default input example">
+  <fa-icon class="text-light ms-3" [icon]="faSearch"></fa-icon>
+</div>
+<ion-content >
+  <div class="Content">
+    <div class="mb-5 mt-4">
+    <h1 class="fw-bold">All Freelancers</h1>
+  </div>
+  <div *ngFor="let user of users" class="Messages ">
+  <div (click)="details(user.id)" >
+    <div   class="p-3 d-flex mt-3 align-items-center mb-4 Custom_card">
+    <div class="MessageImage ">
+      <img class="Image" [src]="user.img" alt="">
+    </div>
+    <div class="ms-3 d-flex flex-row align-items-center justify-content-between" style="width: 76%;">
+      <div class=" ">
+        <h4 class="fw-bold">{{user.firstName}} {{user.lastName}}</h4>
+        <ionic-rating-component
+        activeColor="#ffc409"
+        readonly="true"
+        [rating]="user.feedBack"
+        fontSize = "22px"
+        >
+      </ionic-rating-component>
+    </div>
+    <div class="Category badge bg-dark p-2 d-flex align-items-center">
+      <fa-icon class="text-light fs-6 me-1" [icon]="faTag"></fa-icon>
+      {{user.category}}
+    </div>
+  </div>
+</div>
+</div>
+</div>
+</div>
+</ion-content>

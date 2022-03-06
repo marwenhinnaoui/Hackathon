@@ -1,0 +1,35 @@
+<div class="Header d-flex align-items-center justify-content-between pe-4">
+  <div class="d-flex align-items-center ">
+    <fa-icon routerLink="/tabs/freelancers" class="text-white  fs-3" [icon]="faChevronLeft"></fa-icon>
+    <img src="../../assets/Logo.png" alt="">
+  </div>
+  <div class="d-flex align-items-center" routerLink="/tabs/profil">
+    <fa-icon class="text-light me-2" [icon]="faUser"></fa-icon>
+    <p class="fs-4 m-0 text-white">UserName</p>
+  </div>
+</div>
+
+<ion-content>
+  <div class="Content">
+    <div class="UserDetails ">
+      <div class="d-flex justify-content-center">
+        <div class="Image">
+          <img [src]="freelancerData[id].img" alt="">
+        </div>
+      </div>
+      <div class="mt-2">
+        <p class="fs-3 mb-0">First Name</p>
+        <p class="fs-6">{{freelancerData[id].firstName}}</p>
+        <p class="fs-3 mb-0">Last Name</p>
+        <p class="fs-6">{{freelancerData[id].lastName}}</p>
+        <p class="fs-3 mb-0">Birth date</p>
+        <p class="fs-6">14/14/14</p>
+        <p class="fs-3 mb-0">Email</p>
+        <p class="fs-6">test1@gmail.com</p>
+        <p class="fs-3 mb-0">Phone Number</p>
+        <p class="fs-6">2947477</p>
+      </div>
+      <p class="m-0 mt-5 fs-4 Joined">Joined on date</p>
+    </div>
+  </div>
+</ion-content>

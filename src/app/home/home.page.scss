@@ -1,0 +1,21 @@
+.Content{
+  .Top_rated, .Categories{
+    background-color: #fff;
+    border-radius: 20px;
+    height: 400px;
+    overflow-y:scroll;
+
+  }
+  .Categories{
+    height: auto;
+  }
+  .MessageImage{
+    height: 70px;
+    width: 70px;
+    overflow: hidden;
+    border-radius: 50%;
+  }
+  .Custom_card{
+    padding: 5px !important;
+  }
+}
